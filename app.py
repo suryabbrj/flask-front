@@ -21,9 +21,8 @@ def after():
 
     client = Client("https://suryabbrj-collegeprojectv2.hf.space/")
 
-    caption = client.predict('static/file.jpg', api_name="/predict")
-    print(caption[16:-1])
-    result = caption[16:-1]
+    result = client.predict('static/file.jpg', api_name="/predict")
+    print(result)
     return render_template('predict.html', result=result)
 
 
