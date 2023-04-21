@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple social media Application</title>
+    <title>Moderated-gram</title>
     <link rel="icon" type="image/x-icon" href="/static/assets/img/Instagram_icon.png.webp">
 
     <!-- Css Linkup -->
@@ -165,31 +165,19 @@
                     <h2>Create Post</h2>
                     <hr>
                     <div class="msg"></div>
-                    <form id="post_add_form">
+                    <form id="post_add_form" action="{{url_for('after')}}" enctype="multipart/form-data" method="POST">
+
                         <div class="my-3">
-                            <label for="">Author Name</label>
-                            <input name="aname" type="text" class="form-control">
+                            <label for="">Caption</label>
+                            <textarea name="pcontent" class="form-control"
+                                placeholder="Write a caption for your post..."></textarea>
                         </div>
                         <div class="my-3">
-                            <label for="">Author Profile Photo</label>
-                            <input name="aphoto" type="text" class="form-control">
-                        </div>
-                        <div class="my-3">
-                            <label for="">Post Content</label>
-                            <textarea name="pcontent" class="form-control" placeholder="Write a caption..."></textarea>
-                        </div>
-                        <div class="my-3">
-                            <label for="">Post Photo</label>
-                            <input name="pphoto" type="text" class="form-control">
-                        </div>
-                        <div class="my-3">
-                            <label for="">Please Mention Your Post Date</label>
-                            <input name="pdate" type="date" class="form-control">
-                        </div>
-                        <div class="my-3">
-                            <!-- <button type="button" class="btn btn-primary w-100">Create Post</button> -->
-                            <input type="submit" class="btn btn-primary w-100" value="Create Post">
-                        </div>
+                            <label for="">Upload a photo Photo</label>
+                            <input name="pphoto" type="file" class="form-control" type="file" name="file1" id="file1">
+                            <div class="my-3">
+                                <input type="submit" name="" id="" class="btn btn-primary w-100" value="Create Post">
+                            </div>
                     </form>
                 </div>
             </div>
