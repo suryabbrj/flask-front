@@ -6,24 +6,44 @@ const comment_user = document.getElementById('comment-user');
 
 
 
+form.addEventListener('post_add_form', async (event) => {
+    // Prevent the form from submitting normally
+    event.preventDefault();
+
+    // Get the URL and text inputs from the form
+    const url = form.elements['pphoto'].value;
+    const text = form.elements['text'].value;
+
+    // Make a POST request to the Flask API to process the image
+    const response = await fetch('/api/process-image', {
+        method: 'POST',
+        body: new FormData(form)
+    });
+
+    // Get the response as JSON
+    const result_json = await response.json();
+
+    const result = JSON.stringify(result_json);
+
+});
+
+
 post_form.onsubmit = (e) => {
     e.preventDefault();
 
     const form_data = new FormData(e.target);
     const data = Object.fromEntries(form_data.entries());
-    const { pcontent, pdate, pphoto } = Object.fromEntries(form_data.entries());
+    const { pcontent, pphoto } = Object.fromEntries(form_data.entries());
 
-    if (!pcontent) {
-        msg.innerHTML = setAlert('Fields Are Required!');
-    } else {
+    const id = Math.floor(Math.random() * 1000) + '_' + Date.now();
+    const dataObj = { ...data, id }
 
-        const id = Math.floor(Math.random() * 1000) + '_' + Date.now();
-        const dataObj = { ...data, id }
 
-        createLSData('ins_post', dataObj);
-        e.target.reset();
-        getAllPosts();
-    }
+
+    createLSData('ins_post', dataObj);
+    e.target.reset();
+    getAllPosts();
+
 
 }
 
@@ -110,14 +130,6 @@ all_posts.onclick = (e) => {
 
         edit_post.innerHTML = `
         <div class="my-3">
-                            <label for="">Author Name</label>
-                            <input name="aname" type="text" value="${singleData.aname}" class="form-control">
-                            <input name="id" value="${singleData.id}" type="hidden" />
-                        </div>
-                        <div class="my-3">
-                            <label for="">Author Profile Photo</label>
-                            <input name="aphoto" type="text" value="${singleData.aphoto}" class="form-control">
-                        </div>
                         <div class="my-3">
                             <label for="">Post Content</label>
                             <textarea name="pcontent" class="form-control" placeholder="Write a caption...">${singleData.pcontent}</textarea>
@@ -127,13 +139,10 @@ all_posts.onclick = (e) => {
                             <input name="pphoto" type="text" value="${singleData.pphoto}" class="form-control">
                         </div>
                         <div class="my-3">
-                            <label for="">Please Mention Your Post Date</label>
-                            <input name="pdate" type="date" value="${singleData.pdate}" class="form-control">
-                        </div>
-                        <div class="my-3">
                             <!-- <button type="button" class="btn btn-primary w-100">Create Post</button> -->
                             <input type="submit" class="btn btn-primary w-100" value="Update Post">
                         </div>
+        
         `;
         console.log(id);
 

@@ -1,17 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-*:focus{
+*:focus {
     outline: none;
 }
 
-body{
+body {
     width: 100%;
     background: #fafafa;
     position: relative;
@@ -20,7 +19,7 @@ body{
 
 
 /* Navbar Start */
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +32,7 @@ body{
     padding: 5px 0;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     width: 70%;
     max-width: 1344px;
     height: 100%;
@@ -42,13 +41,13 @@ body{
     align-items: center;
 }
 
-.ins-img{
+.ins-img {
     height: 100%;
     margin-top: 7px;
     margin-left: 425px;
 }
 
-.search-box{
+.search-box {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -63,29 +62,30 @@ body{
     margin-top: 7px;
 }
 
-.search-box::placeholder{
+.search-box::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-items{
+.nav-items {
     height: 22px;
     position: relative;
     margin-right: -65px;
 }
 
-.icon{
+.icon {
     height: 100%;
     cursor: pointer;
     margin: -7px 10px;
     display: inline-block;
 }
 
-.user-profile{
+.user-profile {
     width: 22px;
     border-radius: 50%;
     background-image: url(../img/peofile.jpg);
     background-size: cover;
 }
+
 /* Navbar End */
 
 /* Story Section Start */
@@ -165,10 +165,11 @@ body{
     margin-top: 5px;
     color: rgba(0, 0, 0, 0.5);
 }
+
 /* Story Section End */
 
 /* Post Section Start */
-.post  {
+.post {
     width: 100%;
     height: auto;
     background: #fff;
@@ -176,7 +177,7 @@ body{
     margin-top: 20px;
 }
 
-.info{
+.info {
     width: 100%;
     height: 60px;
     display: flex;
@@ -210,42 +211,42 @@ body{
     background: none;
 }
 
-.info .profile-pic img{
+.info .profile-pic img {
     border: none;
 }
 
-.post-image{
+.post-image {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-.post-content{
+.post-content {
     width: 100%;
     padding: 20px;
 }
 
-.likes{
+.likes {
     font-weight: bold;
 }
 
-.description{
+.description {
     margin: 10px 0;
     font-size: 14px;
     line-height: 20px;
 }
 
-.description span{
+.description span {
     font-weight: bold;
     margin-right: 10px;
 }
 
-.post-time{
+.post-time {
     color: rgba(0, 0, 0, 0.5);
     font-size: 12px;
 }
 
-.comment-wrapper{
+.comment-wrapper {
     width: 100%;
     height: 50px;
     border-radius: 1px solid #dfdfdf;
@@ -254,11 +255,11 @@ body{
     align-items: center;
 }
 
-.comment-wrapper .icon{
+.comment-wrapper .icon {
     height: 30px;
 }
 
-.comment-box{
+.comment-box {
     width: 80%;
     height: 100%;
     border: none;
@@ -267,7 +268,7 @@ body{
 }
 
 .comment-btn,
-.action-btn{
+.action-btn {
     width: 70px;
     height: 100%;
     background: none;
@@ -279,7 +280,7 @@ body{
     opacity: 0.5;
 }
 
-.reaction-wrapper{
+.reaction-wrapper {
     width: 100%;
     height: 50px;
     display: flex;
@@ -287,32 +288,33 @@ body{
     align-items: center;
 }
 
-.reaction-wrapper .icon{
+.reaction-wrapper .icon {
     height: 25px;
     margin: 0;
     margin-right: 20px;
 }
 
-.reaction-wrapper .icon.save{
+.reaction-wrapper .icon.save {
     margin-left: auto;
 }
 
-.post2  {
+.post2 {
     width: 100%;
     height: auto;
     background: #fff;
     border: 1px solid #dfdfdf;
     margin-top: 10px;
 }
+
 /* Post Section End */
 
 
 /* Sidebar Section Start */
-.right-col{
+.right-col {
     padding: 20px;
 }
 
-.profile-card{
+.profile-card {
     width: fit-content;
     display: flex;
     justify-content: center;
@@ -320,7 +322,7 @@ body{
     margin-bottom: 10px;
 }
 
-.profile-card .profile-pic{
+.profile-card .profile-pic {
     flex: 0 0 auto;
     padding: 0;
     background: none;
@@ -329,68 +331,77 @@ body{
     margin-right: 10px;
 }
 
-.profile-card:first-child .profile-pic{
+.profile-card:first-child .profile-pic {
     width: 70px;
     height: 70px;
 }
 
-.profile-card .profile-pic img{
+.profile-card .profile-pic img {
     border: none;
 }
 
-.profile-card .username{
+.profile-card .username {
     font-weight: 500;
     font-size: 14px;
     color: #000;
     text-align: start;
 }
 
-.sub-text{
+.sub-text {
     color: rgba(0, 0, 0, 0.5);
-    font-size:12px;
+    font-size: 12px;
     font-weight: 500;
     margin-top: -10px;
 }
 
-.action-btn{
+.action-btn {
     opacity: 1;
     font-weight: 700;
     font-size: 12px;
 }
 
-.suggestion-text{
+.suggestion-text {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 700;
     margin: 20px 0;
 }
 
-@media (max-width: 1100px){
-    .right-col, .search-box{
+@media (max-width: 1100px) {
+
+    .right-col,
+    .search-box {
         display: none;
     }
+
     .nav-wrapper,
-    .wrapper{
+    .wrapper {
         width: 90%;
     }
-    .wrapper{
+
+    .wrapper {
         display: block;
     }
 }
 
-@media (max-width: 500px){
-    .nav-items .icon{
+@media (max-width: 500px) {
+    .nav-items .icon {
         margin: 0 5px;
     }
-    .post-image{
+
+    .post-image {
         height: 300px;
     }
 }
+
 /* Sidebar Section End */
 
 
 /* Edit/ Delete Start */
-[type=button]:not(:enabled), [type=reset]:not(:enabled), [type=submit]:not(:enabled), button:not(:enabled) {
+[type=button]:not(:enabled),
+[type=reset]:not(:enabled),
+[type=submit]:not(:enabled),
+button:not(:enabled) {
     cursor: pointer;
     border: none;
     /* color: white; */
@@ -403,7 +414,8 @@ body{
     color: black;
 }
 
-.post i{
+.post i {
     color: #000;
 }
+
 /* Edit/Delete End */

@@ -27,10 +27,16 @@
     <!-- Navbar Start -->
     <nav class="navbar">
         <div class="nav-wrapper">
-            <img src="/static/assets/img/logo.PNG" class="ins-img" alt="">
+            <a class="ins-img" href="https://suryabbrj-collegeprojectv2.hf.space" target="_blank"
+                style="text-decoration: none;">
+                <img src="/static/assets/img/logo.PNG" class="icon" alt="">
+            </a>
             <input type="text" class="search-box" placeholder="search">
             <div class="nav-items">
-                <img src="/static/assets/img/home.PNG" class="icon" alt="">
+                <a href="https://suryabbrj-collegeprojectv2.hf.space" target="_blank" style="text-decoration: none;">
+                    <img src="/static/assets/img/home.PNG" class="icon" alt="">
+                </a>
+
                 <img src="/static/assets/img/messenger.PNG" class="icon" alt="">
                 <img data-bs-toggle="modal" data-bs-target="#post-add-modal" src="/static/assets/img/add.PNG"
                     class="icon" alt="">
@@ -41,6 +47,7 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
 
     <!-- Story Section Start -->
     <section class="main">
@@ -82,11 +89,80 @@
                 </div>
 
                 <!-- First Post -->
-                <div class="all-post">
 
+                <div class="all-post" id="caption" style="display: none;">
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <p class="username">sorry we cannot authorize this post as it goes against our community
+                                    guidelines..<br>
+                                    {{result}}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                {% if caption_ok %}
+                <script>
+                    // Show the div by setting its display style to block
+                    document.getElementById('caption').style.display = 'block';
+                </script>
+                {% endif %}
+
+                <div class="post" id="allowed" style="display: none;">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="https://images.pexels.com/photos/15579683/pexels-photo-15579683.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                                    alt="">
+                            </div>
+                            <p class="username">Diyy_a</p>
+
+                        </div>
+                        <!-- Edit Delete -->
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a data-bs-toggle="modal" editLsData="${item.id}" data-bs-target="#edit-modal"
+                                        class="dropdown-item post_edit" href="#">Edit</a></li>
+                                <li><a class="dropdown-item post_delete" deleteLsData="${item.id}" href="#">Delete</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="{{url}}" class="post-image" alt="">
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+                            <img src="/static/assets/img/like.PNG" class="icon" alt="">
+                            <img src="/static/assets/img/comment.PNG" class="icon" alt="">
+                            <img src="/static/assets/img/send.PNG" class="icon" alt="">
+                            <img src="/static/assets/img/save.PNG" class="save icon" alt="">
+                        </div>
+                        <p class="likes">89 likes</p>
+                        <p class="description"><span>22-04-23</span>{{result}}</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="/static/assets/img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">Post</button>
+                    </div>
+                </div>
+
+                {% if post_ok %}
+                <script>
+                    // Show the div by setting its display style to block
+                    document.getElementById('allowed').style.display = 'block';
+                </script>
+                {% endif %}
+
+
             </div>
             <!-- Story Section End -->
+
 
             <!-- Sidebar Section Start -->
             <div class="right-col">
@@ -131,30 +207,13 @@
                     </div>
                     <button class="action-btn">follow</button>
                 </div>
-                <div class="profile-card">
-                    <div class="profile-pic">
-                        <img src="/static/assets/img/oh achha.jpg" alt="">
-                    </div>
-                    <div>
-                        <p class="username">ku_tu_sh</p>
-                        <p class="sub-text">Followed by tasir.01 + 1 more</p>
-                    </div>
-                    <button class="action-btn">follow</button>
-                </div>
-                <div class="profile-card">
-                    <div class="profile-pic">
-                        <img src="/static/assets/img/mr.jpg" alt="">
-                    </div>
-                    <div>
-                        <p class="username">m_r_bhuiyan726</p>
-                        <p class="sub-text">Followed by md_alauddin_nepu</p>
-                    </div>
-                    <button class="action-btn">follow</button>
-                </div>
             </div>
+
+
 
             <!-- Sidebar Section End -->
     </section>
+
 
 
     <!-- create Post Modal Start -->
@@ -173,18 +232,14 @@
                                 placeholder="Write a caption for your post..."></textarea>
                         </div>
                         <div class="my-3">
-                            <label for="">Upload a photo Photo</label>
-                            <input name="pphoto" type="file" class="form-control" type="file" name="file1" id="file1">
-                            <div class="my-3">
-                                <label for="">Post Photo</label>
-                                <input name="pphoto" type="text" class="form-control">
-                            </div>
+                            <label for="">Post Photo</label>
+                            <input name="pphoto" id="pphoto" type="text" class="form-control">
+                        </div>
+                        <div class="my-3">
                             <div class="my-3">
                                 <input type="submit" name="" id="" class="btn btn-primary w-100" value="Create Post">
                             </div>
                         </div>
-
-
                     </form>
                 </div>
             </div>
@@ -205,7 +260,6 @@
                 <div class="modal-body">
                     <div class="msg"></div>
                     <form action="" id="edit_post">
-
                     </form>
                 </div>
             </div>
@@ -213,9 +267,17 @@
     </div>
     <!-- Edit Modal End -->
 
-
     <!-- JavaScript Linkup -->
     <script src="/static/assets/js/function.js"></script>
+    <script>fetch('/api/process-image')
+            .then(response => response.text())
+            .then(result => {
+                // Once the value of {{result}} is received, show the div
+                document.getElementById('ErrorLog').style.display = 'block';
+                // Set the value of {{result}} inside the div
+                document.querySelector('.post-time').textContent = result;
+            });
+    </script>
     <script src="/static/assets/js/main.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
