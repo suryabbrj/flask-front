@@ -31,7 +31,7 @@ the post should be added to the feed!!
 
 trying a different image now
 
-<img src="https://user-images.githubusercontent.com/68824645/233796457-6f37aca0-7924-4b87-86b6-5d0998672865.png height="30%" width="30%">
+<img src="https://user-images.githubusercontent.com/68824645/233796457-6f37aca0-7924-4b87-86b6-5d0998672865.png" height="30%" width="30%">
 
 and as expected the app, blocks the  image from being posted!!
 
