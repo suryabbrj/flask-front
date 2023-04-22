@@ -12,7 +12,7 @@ This is done by, first  evaluating the user inputted image, by converting it int
 
 screenshots of the aptly named "Moderated-gram" the long lost and well obidient brother of Instagram :
 
-![image](https://user-images.githubusercontent.com/68824645/233796070-70f053f6-91e7-49b2-81d3-9476c88d0bd1.png)
+![image](https://user-images.githubusercontent.com/68824645/233796070-70f053f6-91e7-49b2-81d3-9476c88d0bd1.png height)
 
 trying to post a photo in our moderated-gram's photo upload field.....
 
@@ -20,7 +20,7 @@ trying to post a photo in our moderated-gram's photo upload field.....
 
 lets try this photo from pixels.com
 
-![image](https://user-images.githubusercontent.com/68824645/233796172-81496242-ff86-422a-bdc9-062c3cd710e0.png)
+<img src="https://user-images.githubusercontent.com/68824645/233796172-81496242-ff86-422a-bdc9-062c3cd710e0.png" height="50%" width="50%">
 
 since this doesn't contain any violating terms. 
 
