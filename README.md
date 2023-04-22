@@ -20,7 +20,7 @@ trying to post a photo in our moderated-gram's photo upload field.....
 
 lets try this photo from pixels.com
 
-<img src="https://user-images.githubusercontent.com/68824645/233796172-81496242-ff86-422a-bdc9-062c3cd710e0.png" height="50%" width="50%">
+<img src="https://user-images.githubusercontent.com/68824645/233796172-81496242-ff86-422a-bdc9-062c3cd710e0.png" height="30%" width="30%">
 
 since this doesn't contain any violating terms. 
 
@@ -31,7 +31,7 @@ the post should be added to the feed!!
 
 trying a different image now
 
-![image](https://user-images.githubusercontent.com/68824645/233796457-6f37aca0-7924-4b87-86b6-5d0998672865.png)
+<img src="https://user-images.githubusercontent.com/68824645/233796457-6f37aca0-7924-4b87-86b6-5d0998672865.png height="30%" width="30%">
 
 and as expected the app, blocks the  image from being posted!!
 
