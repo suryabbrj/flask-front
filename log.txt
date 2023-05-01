@@ -79,3 +79,73 @@
 2023-04-22 21:48:24 : 	the image is of, a man sitting on a chair talking on a cell phone , the overall tone of the image's content is - NEGATIVE with a approx 93% score
 
 2023-04-22 21:50:04 : 	the image is of, a laptop computer sitting on top of a desk , the overall tone of the image's content is - NEGATIVE with a approx 86% score
+
+2023-04-23 13:39:34 : 	the image is of, a cup of coffee sitting on a window sill , the overall tone of the image's content is - NEGATIVE with a approx 81% score
+
+2023-04-24 13:38:42 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-24 13:43:14 : 	the image is of, a soldier in uniform holding a gun , the overall tone of the image's content is - NEGATIVE with a approx 90% score
+
+2023-04-24 14:12:03 : 	the image is of, a soldier in uniform holding a gun , the overall tone of the image's content is - NEGATIVE with a approx 90% score
+
+2023-04-24 14:13:04 : 	the image is of, a soldier in uniform holding a gun , the overall tone of the image's content is - NEGATIVE with a approx 90% score
+
+2023-04-24 14:15:18 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-24 14:16:44 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-24 14:20:16 : 	the image is of, a person walking down a street with a street sign , the overall tone of the image's content is - NEGATIVE with a approx 64% score
+
+2023-04-24 14:21:03 : 	the image is of, a woman and a man are looking at a cell phone , the overall tone of the image's content is - NEGATIVE with a approx 96% score
+
+2023-04-24 14:21:47 : 	the image is of, two men sitting on a car talking on the phone , the overall tone of the image's content is - NEGATIVE with a approx 94% score
+
+2023-04-24 14:22:29 : 	the image is of, a man standing on a sidewalk with a skateboard , the overall tone of the image's content is - NEGATIVE with a approx 89% score
+
+2023-04-24 14:23:09 : 	the image is of, a car parked on the side of a road , the overall tone of the image's content is - NEGATIVE with a approx 51% score
+
+2023-04-24 14:26:06 : 	the image is of, a man sitting on a table with a hat on , the overall tone of the image's content is - NEGATIVE with a approx 60% score
+
+2023-04-24 14:26:50 : 	the image is of, a woman in a red dress standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 81% score
+
+2023-04-24 14:29:36 : 	the image is of, a woman in a red dress standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 81% score
+
+2023-04-24 14:31:37 : 	the image is of, a cup of coffee sitting on a window sill , the overall tone of the image's content is - NEGATIVE with a approx 81% score
+
+2023-04-24 14:32:15 : 	the image is of, a cup of coffee sitting on a window sill , the overall tone of the image's content is - NEGATIVE with a approx 81% score
+
+2023-04-24 14:52:35 : 	the image is of, a woman in a black dress and a black hat , the overall tone of the image's content is - NEGATIVE with a approx 58% score
+
+2023-04-24 14:53:30 : 	the image is of, a cup of coffee sitting on top of a rug , the overall tone of the image's content is - NEGATIVE with a approx 72% score
+
+2023-04-24 14:54:33 : 	the image is of, a woman in a pink dress standing on a purple carpet , the overall tone of the image's content is - NEGATIVE with a approx 77% score
+
+2023-04-24 14:55:19 : 	the image is of, a man in a suit and tie posing for a picture , the overall tone of the image's content is - NEGATIVE with a approx 81% score
+
+2023-04-24 20:45:48 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-25 10:40:23 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-25 10:41:45 : 	the image is of, a man in a uniform holding a gun in his hand , the overall tone of the image's content is - NEGATIVE with a approx 75% score
+
+2023-04-25 10:41:46 : 	the image is of, a man in a uniform holding a gun in his hand , the overall tone of the image's content is - NEGATIVE with a approx 75% score
+
+2023-04-25 11:52:39 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-25 11:52:39 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-25 12:12:25 : 	the image is of, a river filled with lots of water and plants , the overall tone of the image's content is - POSITIVE with a approx 98% score
+
+2023-04-25 12:13:34 : 	the image is of, a man in a uniform holding a gun in his hand , the overall tone of the image's content is - NEGATIVE with a approx 75% score
+
+2023-04-25 12:28:45 : 	the image is of, a cup of coffee sitting on top of a rug , the overall tone of the image's content is - NEGATIVE with a approx 72% score
+
+2023-04-25 12:30:06 : 	the image is of, a man in a uniform holding a gun in his hand , the overall tone of the image's content is - NEGATIVE with a approx 75% score
+
+2023-04-25 11:52:39 : 	the image is of, a woman in a black dress is standing on a sidewalk , the overall tone of the image's content is - NEGATIVE with a approx 26% score
+
+2023-04-25 11:52:39 : 	the image is of, a woman in a black dress standing next to a wall , the overall tone of the image's content is - NEGATIVE with a approx 60% score
+
+2023-04-25 13:40:08 : 	the image is of, a table with a plate of food and a cup of coffee , the overall tone of the image's content is - POSITIVE with a approx 26% score
+
+2023-04-25 13:42:12 : 	the image is of, a man in a uniform holding a gun in his hand , the overall tone of the image's content is - NEGATIVE with a approx 75% score

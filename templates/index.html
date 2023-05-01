@@ -94,7 +94,7 @@
                     <div class="post">
                         <div class="info">
                             <div class="user">
-                                <p class="username">sorry we cannot authorize this post as it goes against our community
+                                <p class="username" textcolor="red" >sorry we cannot authorize this post as it goes against our community
                                     guidelines..<br>
                                     {{result}}
                                 </p>
@@ -134,7 +134,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="{{url}}" class="post-image" alt="">
+                    <img src="{{url}}" class="post-image"    alt="">
                     <div class="post-content">
                         <div class="reaction-wrapper">
                             <img src="/static/assets/img/like.PNG" class="icon" alt="">
@@ -143,7 +143,7 @@
                             <img src="/static/assets/img/save.PNG" class="save icon" alt="">
                         </div>
                         <p class="likes">89 likes</p>
-                        <p class="description"><span>22-04-23</span>{{result}}</p>
+                        <p class="description"><span>Caption : </span>{{result}}</p>
                     </div>
                     <div class="comment-wrapper">
                         <img src="/static/assets/img/smile.PNG" class="icon" alt="">
@@ -233,7 +233,7 @@
                         </div>
                         <div class="my-3">
                             <label for="">Post Photo</label>
-                            <input name="pphoto" id="pphoto" type="text" class="form-control">
+                            <input name="url" id="url" type="text" class="form-control">
                         </div>
                         <div class="my-3">
                             <div class="my-3">
